@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 
 import PromptCard from "./Promptcard";
-import { useRouter } from "next/navigation";
+
 
 
 
@@ -22,11 +22,7 @@ const PromptCardList = ({ data, handleTagClick }) => {
 };
 
 const Feed = () => {
-  const router =useRouter()
-  useEffect(() => {
-    
-    router.refresh()
-  }, [])
+ 
   
   const [Posts, setPosts] = useState([]);
   //search******

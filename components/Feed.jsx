@@ -3,6 +3,10 @@
 import { useState, useEffect } from "react";
 
 import PromptCard from "./Promptcard";
+import { useRouter } from "next/router";
+
+const router =useRouter()
+router.refresh()
 
 const PromptCardList = ({ data, handleTagClick }) => {
   return (
